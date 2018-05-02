@@ -1,0 +1,4 @@
+測資一：
+sh dataProducer.sh 0.4 3.4 1.0 2.0 8.9e-4 10000 'train_10000.csv'
+sh dataProducer.sh 0.4 3.4 1.0 2.0 8.9e-4 1000 'test_1000.csv'
+python3 main.py

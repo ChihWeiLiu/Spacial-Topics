@@ -1,0 +1,4 @@
+{
+	"attributes" : ["temp_soil", "temp_room"],
+	"class" : "VWC_discrete"
+}

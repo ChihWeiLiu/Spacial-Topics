@@ -1,0 +1,36 @@
+python3 mergeData.py ./input/train_VWC_tempsoil.csv ./input/train_temp.csv timestamp ./input/train.csv
+python3 alignData.py ./input/train_VWC_tempsoil.csv ./input/train_temp.csv temp_room ./output/train.csv
+
+// SVC
+python3 discretizeData.py ./input/train.csv ./input/ds_VWC_0.02.json ./input/train_d_VWC_0.02.csv
+python3 discretizeData.py ./input/test.csv ./input/ds_VWC_0.02.json ./input/test_d_VWC_0.02.csv
+python3 discretizeData.py ./input/train_2.csv ./input/ds_VWC_0.02.json ./input/train_2_d_VWC_0.02.csv
+python3 discretizeData.py ./input/test_2.csv ./input/ds_VWC_0.02.json ./input/test_2_d_VWC_0.02.csv
+python3 SVC.py ./input/train_d_VWC_0.02.csv ./input/test_d_VWC_0.02.csv ./input/ls_d_VWC.json ./output/SVC_0.02.csv
+python3 SVC.py ./input/train_2_d_VWC_0.02.csv ./input/test_2_d_VWC_0.02.csv ./input/ls_d_VWC.json ./output/SVC_2_0.02.csv
+
+python3 discretizeData.py ./input/train.csv ./input/ds_VWC_0.04.json ./input/train_d_VWC_0.04.csv
+python3 discretizeData.py ./input/test.csv ./input/ds_VWC_0.04.json ./input/test_d_VWC_0.04.csv
+python3 discretizeData.py ./input/train_2.csv ./input/ds_VWC_0.04.json ./input/train_2_d_VWC_0.04.csv
+python3 discretizeData.py ./input/test_2.csv ./input/ds_VWC_0.04.json ./input/test_2_d_VWC_0.04.csv
+python3 SVC.py ./input/train_d_VWC_0.04.csv ./input/test_d_VWC_0.04.csv ./input/ls_d_VWC.json ./output/SVC_0.04.csv
+python3 SVC.py ./input/train_2_d_VWC_0.04.csv ./input/test_2_d_VWC_0.04.csv ./input/ls_d_VWC.json ./output/SVC_2_0.04.csv
+
+python3 discretizeData.py ./input/train.csv ./input/ds_VWC_0.05.json ./input/train_d_VWC_0.05.csv
+python3 discretizeData.py ./input/test.csv ./input/ds_VWC_0.05.json ./input/test_d_VWC_0.05.csv
+python3 discretizeData.py ./input/train_2.csv ./input/ds_VWC_0.05.json ./input/train_2_d_VWC_0.05.csv
+python3 discretizeData.py ./input/test_2.csv ./input/ds_VWC_0.05.json ./input/test_2_d_VWC_0.05.csv
+python3 SVC.py ./input/train_d_VWC_0.05.csv ./input/test_d_VWC_0.05.csv ./input/ls_d_VWC.json ./output/SVC_0.05.csv
+python3 SVC.py ./input/train_2_d_VWC_0.05.csv ./input/test_2_d_VWC_0.05.csv ./input/ls_d_VWC.json ./output/SVC_2_0.05.csv
+
+// SVR
+python3 SVR.py ./input/train.csv ./input/test.csv ./input/ls_VWC.json ./output/VWC_SVR.csv
+python3 SVR.py ./input/train_2.csv ./input/test_2.csv ./input/ls_VWC.json ./output/VWC_2_SVR.csv
+python3 SVR.py ./input/train.csv ./input/test.csv ./input/ls_Temp.json ./output/Temp_SVR.csv
+python3 SVR.py ./input/train_2.csv ./input/test_2.csv ./input/ls_Temp.json ./output/Temp_2_SVR.csv
+
+// LinearRegression
+python3 linearRegression.py ./input/train.csv ./input/test.csv ./input/ls_VWC.json ./output/VWC_LinearRegression.csv
+python3 linearRegression.py ./input/train_2.csv ./input/test_2.csv ./input/ls_VWC.json ./output/VWC_2_LinearRegression.csv
+python3 linearRegression.py ./input/train.csv ./input/test.csv ./input/ls_Temp.json ./output/Temp_LinearRegression.csv
+python3 linearRegression.py ./input/train_2.csv ./input/test_2.csv ./input/ls_Temp.json ./output/Temp_2_LinearRegression.csv
