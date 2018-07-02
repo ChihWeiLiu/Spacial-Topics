@@ -1,0 +1,4 @@
+{
+	"attributes" : ["temp_soil", "temp_room", "VWC_discrete_shifted_1", "VWC_discrete_shifted_2", "VWC_discrete_shifted_3", "VWC_discrete_shifted_4", "VWC_discrete_shifted_5", "VWC_discrete_shifted_6", "VWC_discrete_shifted_7", "VWC_discrete_shifted_8", "VWC_discrete_shifted_9", "VWC_discrete_shifted_10", "VWC_discrete_shifted_11", "VWC_discrete_shifted_12"],
+	"class" : "VWC_discrete"
+}

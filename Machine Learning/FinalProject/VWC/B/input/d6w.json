@@ -1,0 +1,4 @@
+{
+	"attributes" : ["isWatering", "temp_soil", "temp_room", "VWC_discrete_shifted_1", "VWC_discrete_shifted_2", "VWC_discrete_shifted_3", "VWC_discrete_shifted_4", "VWC_discrete_shifted_5", "VWC_discrete_shifted_6"],
+	"class" : "VWC_discrete"
+}

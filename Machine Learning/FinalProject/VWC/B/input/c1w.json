@@ -1,0 +1,4 @@
+{
+	"attributes" : ["isWatering", "temp_soil", "temp_room", "VWC_shifted_1"],
+	"class" : "VWC"
+}

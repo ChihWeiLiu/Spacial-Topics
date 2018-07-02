@@ -1,0 +1,52 @@
+A
+python3 shiftData.py VWC/A/input/train.csv VWC 24
+python3 shiftData.py VWC/A/input/test.csv VWC 24
+python3 linearRegression.py VWC/A/input/train_shifted.csv VWC/A/input/test_shifted.csv VWC/A/input/c1.json
+python3 linearRegression.py VWC/A/input/train_shifted.csv VWC/A/input/test_shifted.csv VWC/A/input/c6.json
+python3 linearRegression.py VWC/A/input/train_shifted.csv VWC/A/input/test_shifted.csv VWC/A/input/c12.json
+python3 linearRegression.py VWC/A/input/train_shifted.csv VWC/A/input/test_shifted.csv VWC/A/input/c18.json
+python3 linearRegression.py VWC/A/input/train_shifted.csv VWC/A/input/test_shifted.csv VWC/A/input/c24.json
+python3 SVR.py VWC/A/input/train_shifted.csv VWC/A/input/test_shifted.csv VWC/A/input/c1.json
+python3 SVR.py VWC/A/input/train_shifted.csv VWC/A/input/test_shifted.csv VWC/A/input/c6.json
+python3 SVR.py VWC/A/input/train_shifted.csv VWC/A/input/test_shifted.csv VWC/A/input/c12.json
+python3 SVR.py VWC/A/input/train_shifted.csv VWC/A/input/test_shifted.csv VWC/A/input/c18.json
+python3 SVR.py VWC/A/input/train_shifted.csv VWC/A/input/test_shifted.csv VWC/A/input/c24.json
+python3 discretizeData.py VWC/A/input/train.csv VWC/A/input/d.json
+python3 discretizeData.py VWC/A/input/test.csv VWC/A/input/d.json
+python3 shiftData.py VWC/A/input/train_discrete.csv VWC_discrete 24
+python3 shiftData.py VWC/A/input/test_discrete.csv VWC_discrete 24
+python3 randomForest.py VWC/A/input/train_discrete_shifted.csv VWC/A/input/test_discrete_shifted.csv VWC/A/input/d1.json
+python3 randomForest.py VWC/A/input/train_discrete_shifted.csv VWC/A/input/test_discrete_shifted.csv VWC/A/input/d6.json
+python3 randomForest.py VWC/A/input/train_discrete_shifted.csv VWC/A/input/test_discrete_shifted.csv VWC/A/input/d12.json
+python3 randomForest.py VWC/A/input/train_discrete_shifted.csv VWC/A/input/test_discrete_shifted.csv VWC/A/input/d18.json
+python3 randomForest.py VWC/A/input/train_discrete_shifted.csv VWC/A/input/test_discrete_shifted.csv VWC/A/input/d24.json
+python3 adaBoost.py VWC/A/input/train_discrete_shifted.csv VWC/A/input/test_discrete_shifted.csv VWC/A/input/d1.json
+python3 adaBoost.py VWC/A/input/train_discrete_shifted.csv VWC/A/input/test_discrete_shifted.csv VWC/A/input/d6.json
+python3 adaBoost.py VWC/A/input/train_discrete_shifted.csv VWC/A/input/test_discrete_shifted.csv VWC/A/input/d12.json
+python3 adaBoost.py VWC/A/input/train_discrete_shifted.csv VWC/A/input/test_discrete_shifted.csv VWC/A/input/d18.json
+python3 adaBoost.py VWC/A/input/train_discrete_shifted.csv VWC/A/input/test_discrete_shifted.csv VWC/A/input/d24.json
+
+B
+python3 linearRegression.py VWC/B/input/train_shifted_w.csv VWC/B/input/test_shifted_w.csv VWC/B/input/c1w.json
+python3 linearRegression.py VWC/B/input/train_shifted_w.csv VWC/B/input/test_shifted_w.csv VWC/B/input/c6w.json
+python3 randomForest.py VWC/B/input/train_discrete_shifted_w.csv VWC/B/input/test_discrete_shifted_w.csv VWC/B/input/d1w.json
+python3 randomForest.py VWC/B/input/train_discrete_shifted_w.csv VWC/B/input/test_discrete_shifted_w.csv VWC/B/input/d6w.json
+python3 randomForest.py VWC/B/input/train_discrete_shifted_w.csv VWC/B/input/test_discrete_shifted_w.csv VWC/B/input/d12w.json
+python3 adaBoost.py VWC/B/input/train_discrete_shifted_w.csv VWC/B/input/test_discrete_shifted_w.csv VWC/B/input/d1w.json
+python3 adaBoost.py VWC/B/input/train_discrete_shifted_w.csv VWC/B/input/test_discrete_shifted_w.csv VWC/B/input/d6w.json
+python3 adaBoost.py VWC/B/input/train_discrete_shifted_w.csv VWC/B/input/test_discrete_shifted_w.csv VWC/B/input/d12w.json
+
+temp
+python3 shiftData.py temp/input/train.csv temp_soil 6
+python3 shiftData.py temp/input/test.csv temp_soil 6
+python3 linearRegression.py temp/input/train_shifted.csv temp/input/test_shifted.csv temp/input/c0.json
+python3 linearRegression.py temp/input/train_shifted.csv temp/input/test_shifted.csv temp/input/c1.json
+python3 linearRegression.py temp/input/train_shifted.csv temp/input/test_shifted.csv temp/input/c6.json
+python3 discretizeData.py temp/input/train.csv temp/input/d.json
+python3 discretizeData.py temp/input/test.csv temp/input/d.json
+python3 shiftData.py temp/input/train_discrete.csv temp_soil_discrete 24
+python3 shiftData.py temp/input/test_discrete.csv temp_soil_discrete 24
+python3 randomForest.py temp/input/train_discrete_shifted.csv temp/input/test_discrete_shifted.csv temp/input/d1.json
+python3 randomForest.py temp/input/train_discrete_shifted.csv temp/input/test_discrete_shifted.csv temp/input/d6.json
+python3 adaBoost.py temp/input/train_discrete_shifted.csv temp/input/test_discrete_shifted.csv temp/input/d1.json
+python3 adaBoost.py temp/input/train_discrete_shifted.csv temp/input/test_discrete_shifted.csv temp/input/d6.json

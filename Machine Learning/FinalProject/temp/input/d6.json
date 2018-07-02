@@ -1,0 +1,4 @@
+{
+	"attributes" : ["temp_room", "temp_soil_discrete_shifted_1", "temp_soil_discrete_shifted_2", "temp_soil_discrete_shifted_3", "temp_soil_discrete_shifted_4", "temp_soil_discrete_shifted_5", "temp_soil_discrete_shifted_6"],
+	"class" : "temp_soil_discrete"
+}

@@ -1,0 +1,4 @@
+{
+	"attributes" : ["temp_soil", "temp_room", "VWC_discrete_shifted_1", "VWC_discrete_shifted_2", "VWC_discrete_shifted_3", "VWC_discrete_shifted_4", "VWC_discrete_shifted_5", "VWC_discrete_shifted_6", "VWC_discrete_shifted_7", "VWC_discrete_shifted_8", "VWC_discrete_shifted_9", "VWC_discrete_shifted_10", "VWC_discrete_shifted_11", "VWC_discrete_shifted_12", "VWC_discrete_shifted_13", "VWC_discrete_shifted_14", "VWC_discrete_shifted_15", "VWC_discrete_shifted_16", "VWC_discrete_shifted_17", "VWC_discrete_shifted_18", "VWC_discrete_shifted_19", "VWC_discrete_shifted_20", "VWC_discrete_shifted_21", "VWC_discrete_shifted_22", "VWC_discrete_shifted_23", "VWC_discrete_shifted_24"],
+	"class" : "VWC_discrete"
+}
